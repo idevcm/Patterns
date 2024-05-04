@@ -1,0 +1,32 @@
+CREATE TABLE books (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(100),
+    author VARCHAR(100),
+    price DECIMAL(5, 2)
+);
+
+INSERT into books (title, author, price)
+VALUES
+    ('El Gran Gatsby', 'F. Scott Fitzgerald', 9.99),
+    ('El código Da Vinci', 'Dan Brown', 8.99),
+    ('Don Quijote de la Mancha', 'Miguel de Cervantes', 7.99),
+    ('Cien años de soledad', 'Gabriel García Márquez', 6.99),
+    ('Siddhartha', 'Hermann Hesse', 5.99),
+    ('1984', 'George Orwell', 4.99),
+    ('Harry Potter y la piedra filosofal', 'J.K. Rowling', 3.99),
+    ('El Señor de los Anillos', 'J.R.R. Tolkien', 2.99),
+    ('Orgullo y prejuicio', 'Jane Austen', 1.99),
+    ('El Hobbit', 'J.R.R. Tolkien', 0.99),
+    ('Matar a un ruiseñor', 'Harper Lee', 10.99),
+    ('Crimen y castigo', 'Fyodor Dostoyevsky', 11.99),
+    ('El retrato de Dorian Gray', 'Oscar Wilde', 12.99),
+    ('La metamorfosis', 'Franz Kafka', 13.99),
+    ('La Odisea', 'Homer', 14.99),
+    ('La Ilíada', 'Homer', 15.99),
+    ('La Divina Comedia', 'Dante Alighieri', 16.99),
+    ('El Principito', 'Antoine de Saint-Exupéry', 17.99),
+    ('El guardián entre el centeno', 'J.D. Salinger', 18.99),
+    ('Nada', 'Carmen Laforet', 19.99);
+
+
+SELECT * FROM books;
